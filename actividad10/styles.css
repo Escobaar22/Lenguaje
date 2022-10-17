@@ -1,0 +1,15 @@
+body{
+    background-color:rgb(99, 131, 78);
+}
+
+.barra{
+    display: flex;
+    background-color: rgb(252, 252, 252);
+}
+
+.barra a {
+    color:rgb(0, 0, 0);
+    padding:14px 20px;
+    text-decoration: underline;
+    text-align: center;
+}
