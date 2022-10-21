@@ -27,7 +27,23 @@ body{
 
 .parte2{
     width:70%;
+    float: left;
     background-color: blanchedalmond;
+}
+
+@media (max-width: 800px){
+    .parte1{
+        width: 100%;
+        float: left;
+        background-color: chocolate;
+        text-decoration: underline;
+    }
+
+    .parte2{
+        width:100%;
+        float: left;
+        background-color: blanchedalmond;
+    }
 }
 
 .parte2 h2{
@@ -41,4 +57,5 @@ body{
 .fin{
     background-color: antiquewhite;
     text-align: center;
+    padding: 50px;
 }
