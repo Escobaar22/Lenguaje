@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table colums="4">
+    <row>
+        <cell rowspan="2"><accion>Descripcion de cada hecho</accion></cell>
+        <cell><accion>Fecha</accion></cell>
+    </row>
+    <row>
+        
+    </row>
+</table>
