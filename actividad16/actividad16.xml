@@ -2,8 +2,8 @@
 <matricula>
     <personal>
         <dni>99223366M</dni>
-        <nombre>Juan Pardo Martín</nombre>
-        <titulacion>Ingeniería Informática</titulacion>
+        <nombre>Juan Pardo Martin</nombre>
+        <titulacion>Ingenieria Informatica</titulacion>
         <curso_academico>1997/1998</curso_academico>
         <domicilios>
             <domicilio tipo="familiar">
@@ -15,6 +15,6 @@
         </domicilios>
     </personal>
     <pago>
-        <tipo_matricula>Matrícula Ordinaria</tipo_matricula>
+        <tipo_matricula>Matricula Ordinaria</tipo_matricula>
     </pago>
 </matricula>
