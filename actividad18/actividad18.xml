@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura SYSTEM "actividad18.dtd">
 
 <factura n_fac="f999"> 
     <datos_empresa> 
@@ -8,6 +9,7 @@
         <provincia>Madrid</provincia> 
         <cif>Q-9876543</cif> 
         <telefono/> 
+        <fax/>
     </datos_empresa> 
     <datos_cliente n_cli="c879"> 
         <nombre>Darío, Bueno Gutiérrez</nombre> 
