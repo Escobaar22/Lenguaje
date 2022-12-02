@@ -9,9 +9,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <table width="50%" border="1" cellspacing="0" cellpadding="5">
                     <tr colspan="6">
                         <th>Factura <xsl:value-of select="@nombre"/></th>
-                    </tr>                       
-                    <tr>
-                        <xsl:for-each select="info-empresa">
+                    </tr>
+                    <xsl:for-each select="info-empresa/info-emision">                      
+                        <tr>
                             <td colspan="3">
                                 <xsl:value-of select="titulo"/><br/>
                                 <xsl:value-of select="direccion"/><br/>
@@ -20,15 +20,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                                 teléfono: <xsl:value-of select="telefono"/></br>
                                 fax: <xsl:value-of select="fax"/>
                             </td>
-                        </xsl:for-each>
-                        <xsl:for-each select="info-emision">
-                                <td colspan="3">
+                            <td colspan="3">
                                     Fecha: <xsl:value-of select="fecha"/><br/>
                                     <xsl:value-of select="numero-pedido"/></br>
                                     Forma de pago: <xsl:value-of select="pago"/><br/>
-                                </td>
-                        </xsl:for-each>
-                    </tr>
+                            </td>                  
+                        </tr>
+                    </xsl:for-each>
                     
                 </table>
             </xsl:for-each>
