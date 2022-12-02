@@ -6,7 +6,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="eventos">
     <html>
         <body>
-            <table width="50%" border="1" cellspacing="10" cellpadding="10">
+            <table width="50%" border="1" cellspacing="10" cellpadding="0">
                 <tr>
                     <th rowspan="2"><i>Descripcion de cada hecho</i></th>
                     <th colspan="3"><i>Fecha</i></th>
