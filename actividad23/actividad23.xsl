@@ -7,8 +7,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <body>
             <xsl:for-each select="factura">
                 <table width="50%" border="1" cellspacing="0" cellpadding="5">
-                    <tr colspan="6">
-                        <th>Factura <xsl:value-of select="@nombre"/></th>
+                    <tr>
+                        <th colspan="6">Factura <xsl:value-of select="@nombre"/></th>
                     </tr>       
                     <tr>               
                         <td colspan="3">
@@ -30,7 +30,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         </td>
                     </tr>
                     <tr >
-                        <td><b>Datos CLIENTE</b></td>
+                        <td colspan="6"><b>Datos CLIENTE</b></td>
                     </tr>
                                       
                 </table>
