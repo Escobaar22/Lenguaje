@@ -55,7 +55,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <th>I.V.A.</th>
                         <th>IMPORTE</th>
                     </tr>
-                    <xsl:for-each select="datos-factura/objeto/base-imponible/iva/cuota-iva/total-factura">
+                    <xsl:for-each select="datos-factura/objeto">
                         <tr style="text-align:right">
                             <td><xsl:value-of select="ref"/></td>
                             <td><xsl:value-of select="nombre"/></td>
@@ -64,14 +64,16 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             <td><xsl:value-of select="iva"/></td>
                             <td><xsl:value-of select="importe"/></td>
                         </tr>
-                    
-                        <tr style="text-align:left">
-                            <th colspan="2">Base imponible</th> 
-                            <th colspan="2">% I.V.A.</th>
-                            <th colspan="2">Cuota I.V.A.</th>
-                        </tr>
+                    </xsl:for-each>
+                    <tr style="text-align:left">
+                       <th colspan="2">Base imponible</th> 
+                       <th colspan="2">% I.V.A.</th>
+                       <th colspan="2">Cuota I.V.A.</th>
+                    </tr>
+                    <xsl:for-each select="datos-factura">
                         <tr>
-                            <td colspan="2"><xsl:value-of select="base.imponible"/></td>
+                            
+                            <td colspan="2"><xsl:value-of select="base-imponible"/></td>
                             <td colspan="2"><xsl:value-of select="iva"/></td>
                             <td colspan="2"><xsl:value-of select="cuota-iva"/></td>
                         </tr>
