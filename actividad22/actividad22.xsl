@@ -5,7 +5,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
     <html>
         <body>
-            <table width="70%" border="1" cellspacing="0" cellpadding="15">
+            <table width="60%" border="1" cellspacing="0" cellpadding="0">
                 <tr>
                     <th colspan="6">CDs en oferta</th>
                 </tr>
