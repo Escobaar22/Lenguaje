@@ -33,7 +33,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <td colspan="6"><b>Datos CLIENTE</b></td>
                     </tr>
                     <tr>
-                        <td>
+                        <td colspan="6">
                             <xsl:for-each select="datos-cliente">
                                 nº cliente: <xsl:value-of select="numero-cliente"/><br/>
                                 Nombre: <xsl:value-of select="nombre"/><br/>
@@ -43,7 +43,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                                 Provincia: <xsl:value-of select="provincia"/>
                             </xsl:for-each> 
                         </td>
-                    </tr>             
+                    </tr>
+                                 
                 </table>
             </xsl:for-each>
         </body>
