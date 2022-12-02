@@ -28,7 +28,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                                 Forma de pago: <xsl:value-of select="pago"/><br/>
                             </xsl:for-each>
                         </td>
-                        
+                    </tr>
+                    <tr>
+                        <td><b>Datos CLIENTE</b></td>
                     </tr>
                                       
                 </table>
