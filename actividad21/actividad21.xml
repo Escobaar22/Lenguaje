@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE eventos SYSTEM "actividad211.dtd">
+<?xml-stylesheet type="text/xsl" href="actividad21.xsl"?>
+
+<eventos>
+    <evento nombre="IBM da a conocer el PC.">
+        <fecha>
+            <dia>12</dia>
+            <mes>8</mes>
+            <año>1981</año>
+        </fecha>
+    </evento>
+    <evento nombre="Se funda google.">
+        <fecha>
+            <dia>4</dia>
+            <mes>8</mes>
+            <año>1998</año>
+        </fecha>
+    </evento>
+    <evento nombre="Se funda facebook.">
+        <fecha>
+            <dia>4</dia>
+            <mes>2</mes>
+            <año>2004</año>
+        </fecha>
+    </evento>
+</eventos>
