@@ -7,7 +7,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <body>
             <xsl:for-each select="factura">
                 <table width="50%" border="1" cellspacing="0" cellpadding="5">
-                    <tr>
+                    <tr colspan="6">
                         <th>Factura <xsl:value-of select="@nombre"/></th>
                     </tr>       
                     <tr>               
