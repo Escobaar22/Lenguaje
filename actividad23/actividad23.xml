@@ -60,9 +60,9 @@
             <iva>16,0</iva>
             <importe>556,80 euros</importe>
         </objeto>
-        <base-imponible>970,00 euros</base-imponible>
+        <base-imponible>970,00 eur.</base-imponible>
         <iva>16,0</iva>
-        <cuota-iva>155,20</cuota-iva>
+        <cuota-iva>155,20 eur.</cuota-iva>
         <total-factura>1125,20 euros</total-factura>
     </datos-factura>
 </factura>
