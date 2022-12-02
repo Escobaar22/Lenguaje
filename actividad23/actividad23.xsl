@@ -70,6 +70,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                        <th colspan="2">% I.V.A.</th>
                        <th colspan="2">Cuota I.V.A.</th>
                     </tr>
+                    <tr>
+                        <td colspan="2"><xsl:value-of select="base.imponible"/></td>
+                        <td colspan="2"><xsl:value-of select="iva"/></td>
+                        <td colspan="2"><xsl:value-of select="cuota-iva"/></td>
+                    </tr>
+                    <tr>
+                        <th>TOTAL FACTURA: <xsl:value-of select="total-factura"/></th>
+                    </tr>
                 </table>
             </xsl:for-each>
         </body>
