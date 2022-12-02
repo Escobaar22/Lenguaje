@@ -11,7 +11,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <th>Factura <xsl:value-of select="@nombre"/></th>
                     </tr>
                     <xsl:for-each select="info-empresa">
-                        <tr>
+                        <tr colspan="3">
                             <td><xsl:value-of select="nombre"/></td>
                         </tr>
                     </xsl:for-each>                  
