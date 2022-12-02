@@ -3,7 +3,7 @@
 <xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:template match="eventos/evento">
+<xsl:template match="eventos">
     <html>
         <body>
             <table width="80%" border="1" cellspacing="0" cellpadding="0">
@@ -16,12 +16,14 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     <th>Mes</th>
                     <th>Año</th>
                 </tr>
-            <xsl:for-each select="fecha">
+            <xsl:for-each select="evento">
                 <tr>
                     <td><xsl:value-of select="@nombre"/></td>
+                    <xsl:for-each select="fecha">
                     <td><xsl:value-of select="dia"/></td>
                     <td><xsl:value-of select="mes"/></td>
                     <td><xsl:value-of select="año"/></td>
+                    </xsl:for-each>
                 </tr>
             </xsl:for-each>
             </table>
