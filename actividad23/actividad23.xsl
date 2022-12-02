@@ -47,9 +47,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     <tr>
                         <td colspan="6"><b>Datos FACTURA</b></td>
                     </tr>
-                    <tr style="text-aling:right">
-                        <td >REF.</td>
-                        <td>DESCRIPCIÓN>ç</td>
+                    <tr style="text-align:right">
+                        ">
+                        <td>REF.</td>
+                        <td>DESCRIPCIÓN</td>
                         <td>CANT.</td>
                         <td>PRECIO.</td>
                         <td>I.V.A.</td>
