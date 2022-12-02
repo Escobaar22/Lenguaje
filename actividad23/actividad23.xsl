@@ -32,7 +32,18 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     <tr >
                         <td colspan="6"><b>Datos CLIENTE</b></td>
                     </tr>
-                                      
+                    <tr>
+                        <td>
+                            <xsl:for-each select="datos-cliente">
+                                nº cliente: <xsl:value-of select="numero-cliente"/><br/>
+                                Nombre: <xsl:value-of select="nombre"/><br/>
+                                Dirección de envio: <xsl:value-of select="direccion"/><br/>
+                                Población: <xsl:value-of select="poblacion"/><br/>
+                                cod. postal: <xsl:value-of select="codigo-postal"/><br/>
+                                Provincia: <xsl:value-of select="provincia"/>
+                            </xsl:for-each> 
+                        </td>
+                    </tr>             
                 </table>
             </xsl:for-each>
         </body>
