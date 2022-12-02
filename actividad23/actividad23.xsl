@@ -78,7 +78,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             <td colspan="2"><xsl:value-of select="cuota-iva"/></td>
                         </tr>
                         <tr>
-                            <th>TOTAL FACTURA: <xsl:value-of select="total-factura"/></th>
+                            <th colspan="6">TOTAL FACTURA: <xsl:value-of select="total-factura"/></th>
                         </tr>
                     </xsl:for-each>
                 </table>
