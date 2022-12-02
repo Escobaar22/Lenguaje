@@ -14,6 +14,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <tr colspan="3">
                             <td><xsl:value-of select="nombre"/></td>
                         </tr>
+                    </xsl:for-each>
+                    <xsl:for-each select="info-emision">
+                        <tr>
+                            <td>
+                                <xsl:value-of select="fecha">
+                            </td>
+                        </tr>
                     </xsl:for-each>                  
                 </table>
             </xsl:for-each>
