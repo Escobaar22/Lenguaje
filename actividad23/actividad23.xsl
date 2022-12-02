@@ -9,14 +9,27 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <table width="50%" border="1" cellspacing="0" cellpadding="5">
                     <tr colspan="6">
                         <th>Factura <xsl:value-of select="@nombre"/></th>
-                    </tr>
+                    </tr>                       
                     <tr>
-                        <td colspan="3">
-                            Equipos Digitales S.L.<br/>Av. Valladolid<br/>Madrid 28015<br/>C.I.F.: Q-9876543<br/>teléfono: 91.777.66.88<br/>fax: 91.777.66.99 
-                        </td>
-                        <td colspan="3">
-                            <br/><br/>Fecha: 12-01-2005<br/>Pedido nº 731<br/> Forma de pago: EFECTIVO
-                        </td>
+                        <xsl:for-each select="info-empresa">
+                            <td colspan="3">
+                                <xsl:value-of select="titulo"/><br/>
+                                <xsl:value-of select="direccion"/><br/>
+                                <xsl:value-of select="ciudad-codigo"/><br/>
+                                C.I.F.: <xsl:value-of select="cif"/></br>
+                                teléfono: <xsl:value-of select="telefono"/></br>
+                                fax: <xsl:value-of select="fax"/>
+                            </td>
+                        </xsl:for-each>
+                        <xsl:for-each select="info-emision">
+                                <td colspan="3">
+                                    <xsl:value-of select="fecha"/><br/>
+                                    <xsl:value-of select="numero-pedido"/></br>
+                                    <xsl:value-of select="pago"/><br/>
+                                </td>
+                        </xsl:for-each>
+                    </tr>
+                    
                 </table>
             </xsl:for-each>
         </body>
