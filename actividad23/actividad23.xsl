@@ -7,8 +7,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
         <body>
             <xsl:for-each select="factura">
                 <table width="50%" border="1" cellspacing="0" cellpadding="5">
-                    <tr colspan="6">
-                        <th>Factura <xsl:value-of select="@nombre"/></th>
+                    <tr>
+                        <th colspan="6">Factura <xsl:value-of select="@nombre"/></th>
                     </tr>       
                     <tr>               
                         <td colspan="3">
@@ -19,6 +19,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                                 C.I.F.: <xsl:value-of select="cif"/><br/>
                                 teléfono: <xsl:value-of select="telefono"/><br/>
                                 fax: <xsl:value-of select="fax"/>
+                            </xsl:for-each>
+                        </td>
+                        <td colspan="3">
+                            <xsl:for-each select="info-emision">
+                                <xsl:value-of select="fecha"/><br/>
                             </xsl:for-each>
                         </td>
                         
