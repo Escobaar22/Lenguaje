@@ -10,23 +10,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     <tr colspan="6">
                         <th>Factura <xsl:value-of select="@nombre"/></th>
                     </tr>
-                    <xsl:for-each select="info-empresa/info-emision">                      
-                        <tr>
-                            <td colspan="3">
-                                <xsl:value-of select="titulo"/><br/>
-                                <xsl:value-of select="direccion"/><br/>
-                                <xsl:value-of select="ciudad-codigo"/><br/>
-                                C.I.F.: <xsl:value-of select="cif"/></br>
-                                teléfono: <xsl:value-of select="telefono"/></br>
-                                fax: <xsl:value-of select="fax"/>
-                            </td>
-                            <td colspan="3">
-                                    Fecha: <xsl:value-of select="fecha"/><br/>
-                                    <xsl:value-of select="numero-pedido"/></br>
-                                    Forma de pago: <xsl:value-of select="pago"/><br/>
-                            </td>                  
-                        </tr>
-                    </xsl:for-each>
+                    
                     
                 </table>
             </xsl:for-each>
