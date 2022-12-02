@@ -44,7 +44,27 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             </xsl:for-each> 
                         </td>
                     </tr>
-                                 
+                    <tr>
+                        <td colspan="6"><b>Datos FACTURA</b></td>
+                    </tr>
+                    <tr style="text-aling:right">
+                        <td >REF.</td>
+                        <td>DESCRIPCIÓN>ç</td>
+                        <td>CANT.</td>
+                        <td>PRECIO.</td>
+                        <td>I.V.A.</td>
+                        <td>IMPORTE</td>
+                    </tr>
+                    <tr>
+                        <xsl:for-each select="datos-factura/objeto">
+                            <td><xsl:value-of select="ref"/></td>
+                            <td><xsl:value-of select="nombre"/></td>
+                            <td><xsl:value-of select="cant"/></td>
+                            <td><xsl:value-of select="precio"/></td>
+                            <td><xsl:value-of select="iva"/></td>
+                            <td><xsl:value-of select="importe"/></td>
+                        </xsl:for-each>
+                    </tr>
                 </table>
             </xsl:for-each>
         </body>
