@@ -9,18 +9,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 <table width="50%" border="1" cellspacing="0" cellpadding="5">
                     <tr colspan="6">
                         <th>Factura <xsl:value-of select="@nombre"/></th>
-                    </tr>
-                    
+                    </tr>       
                     <tr>
                         <xsl:for-each select="info-empresa">
                             <td colspan="3">
                                 <xsl:value-of select="nombre"/>
                             </td>
-                            <xsl:for-each select="info-emision">                       
-                                <td colspan="3">
-                                    <xsl:value-of select="fecha">
-                                </td>
-                            </xsl:for-each>
                         </xsl:for-each>
                     </tr>
                                       
