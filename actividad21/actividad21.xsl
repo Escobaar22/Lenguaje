@@ -16,13 +16,15 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     <th>Mes</th>
                     <th>Año</th>
                 </tr>
-                <xsl:for-each select="evento/fecha">
+                <xsl:for-each select="evento">
+                <xsl:for-each select="fecha">
                 <tr>
                     <td><xsl:value-of select="@nombre"/></td>
                     <td><xsl:value-of select="dia"/></td>
                     <td><xsl:value-of select="mes"/></td>
                     <td><xsl:value-of select="año"/></td>
                 </tr>
+                </xsl:for-each>
                 </xsl:for-each>
             </table>
         </body>
