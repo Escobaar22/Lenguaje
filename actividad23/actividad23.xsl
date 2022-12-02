@@ -6,7 +6,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <html>
         <body>
             <xsl:for-each select="factura">
-                <table width="50%" border="1" cellspacing="0" cellpadding="5">
+                <table width="60%" border="1" cellspacing="0" cellpadding="5">
                     <tr>
                         <th colspan="6">Factura <xsl:value-of select="@nombre"/></th>
                     </tr>       
@@ -56,7 +56,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <th>IMPORTE</th>
                     </tr>
                     <xsl:for-each select="datos-factura/objeto">
-                        <tr>
+                        <tr style="text-align:right">
                             <td><xsl:value-of select="ref"/></td>
                             <td><xsl:value-of select="nombre"/></td>
                             <td><xsl:value-of select="cant"/></td>
