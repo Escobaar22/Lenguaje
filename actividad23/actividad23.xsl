@@ -48,13 +48,12 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         <td colspan="6"><b>Datos FACTURA</b></td>
                     </tr>
                     <tr style="text-align:right">
-                        ">
-                        <td>REF.</td>
-                        <td>DESCRIPCIÓN</td>
-                        <td>CANT.</td>
-                        <td>PRECIO.</td>
-                        <td>I.V.A.</td>
-                        <td>IMPORTE</td>
+                        <th>REF.</th>
+                        <th>DESCRIPCIÓN</th>
+                        <th>CANT.</th>
+                        <th>PRECIO.</th>
+                        <th>I.V.A.</th>
+                        <th>IMPORTE</th>
                     </tr>
                     <xsl:for-each select="datos-factura/objeto">
                         <tr>
@@ -66,6 +65,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             <td><xsl:value-of select="importe"/></td>
                         </tr>
                     </xsl:for-each>
+                    <tr style="text-align:left">
+                       <th colspan="2">Base imponible</th> 
+                       <th colspan="2">% I.V.A.</th>
+                       <th colspan="2">Cuota I.V.A.</th>
+                    </tr>
                 </table>
             </xsl:for-each>
         </body>
