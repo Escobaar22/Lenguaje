@@ -25,7 +25,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             <xsl:for-each select="info-emision">
                                 Fecha: <xsl:value-of select="fecha"/><br/>
                                 <xsl:value-of select="numero-pedido"/><br/>
-                                Forma de pago: <xsl:value-of select="pago"/><br/>
+                                Forma de pago: <xsl:value-of select="pago"/>
                             </xsl:for-each>
                         </td>
                     </tr>
