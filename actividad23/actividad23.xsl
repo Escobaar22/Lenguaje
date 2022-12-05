@@ -4,7 +4,7 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
     <html>
-        <body style="color:lynch">
+        <body>
             <xsl:for-each select="factura">
                 <table width="60%" border="1" cellspacing="0" cellpadding="5">
                     <tr>
