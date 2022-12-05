@@ -6,7 +6,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <html>
         <body>
             <xsl:for-each select="factura">
-                <table width="60%" border="1" cellspacing="0" cellpadding="5">
+                <table width="60%" border="1" cellpadding="5">
                     <tr>
                         <th colspan="6">Factura <xsl:value-of select="@nombre"/></th>
                     </tr>       
@@ -77,7 +77,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             <td colspan="2"><xsl:value-of select="iva"/></td>
                             <td colspan="2"><xsl:value-of select="cuota-iva"/></td>
                         </tr>
-                        <tr>
+                        <tr cellspacing="5">
                             <th colspan="6">TOTAL FACTURA: <xsl:value-of select="total-factura"/></th>
                         </tr>
                     </xsl:for-each>
