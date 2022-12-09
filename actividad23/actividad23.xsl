@@ -29,8 +29,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             </xsl:for-each>
                         </td>
                     </tr>
-                    <tr >
-                        <td colspan="6"><b>Datos CLIENTE</b></td>
+                    <tr style="text-align:left">
+                        <th colspan="6">Datos CLIENTE</th>
                     </tr>
                     <tr>
                         <td colspan="6">
@@ -44,8 +44,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                             </xsl:for-each> 
                         </td>
                     </tr>
-                    <tr>
-                        <td colspan="6"><b>Datos FACTURA</b></td>
+                    <tr style="text-align:left">
+                        <th colspan="6">Datos FACTURA</th>
                     </tr>
                     <tr style="text-align:right">
                         <th>REF.</th>

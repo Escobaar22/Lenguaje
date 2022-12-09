@@ -1,0 +1,8 @@
+<!ELEMENT ofertas (cd+)>
+<!ELEMENT cd (titulo,artista,pais,discografica,precio,publicacion)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT artista (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT discografica (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT publicacion (#PCDATA)>
