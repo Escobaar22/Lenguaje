@@ -15,8 +15,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         "discografia": "<xsl:value-of select="discografia"/>",
                         "precio": "<xsl:value-of select="precio"/>",
                         "publicacion": "<xsl:value-of select="publicacion"/>"
-                        },
-                        <xsl:if test="position() &lt; last()"></xsl:if>
+                        }
+                        <xsl:if test="position() &lt; last()">,</xsl:if>
                     </xsl:for-each>    
                 ] 
             } 
