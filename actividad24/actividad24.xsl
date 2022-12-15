@@ -6,7 +6,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         {"ofertas": 
             { "cd": 
-                [<xsl:for-each select="ofertas/cd">
+                [
+                    <xsl:for-each select="ofertas/cd">
                         {
                         "titulo": "<xsl:value-of select="titulo"/>",
                         "artista": "<xsl:value-of select="artista"/>",
@@ -15,8 +16,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                         "precio": "<xsl:value-of select="precio"/>",
                         "publicacion": "<xsl:value-of select="publicacion"/>"
                         }
-                        <xsl:if test="position() &lt; last()">,</xsl:if>
-                </xsl:for-each>] 
+                        <xsl:if test="position() &lt; last()"/>
+                    </xsl:for-each>    
+                ] 
             } 
         }
     </xsl:template>
