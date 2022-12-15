@@ -8,7 +8,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             { "cd": 
                 [
                     <xsl:for-each select="ofertas/cd">
-                        {"titulo": "<xsl:value-of select="titulo"/>",
+                        {
+                        "titulo": "<xsl:value-of select="titulo"/>",
                         "artista": "<xsl:value-of select="artista"/>",
                         "pais": "<xsl:value-of select="pais"/>",
                         "discografia": "<xsl:value-of select="discografia"/>",
