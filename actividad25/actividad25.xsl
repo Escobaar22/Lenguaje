@@ -4,8 +4,7 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output indent="yes" method="text" version="1.0" encoding="UTF-8"/>
     <xsl:template match="/">
-        factura: 
-        nombre: <xsl:value-of select="/factura/@nombre"/>
+        factura: <xsl:value-of select="/factura/@nombre"/> 
         info-empresa:
             nombre: <xsl:value-of select="/factura/info-empresa/nombre"/>
             direccion: <xsl:value-of select="/factura/info-empresa/direccion"/>
