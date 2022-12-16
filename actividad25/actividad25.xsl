@@ -34,8 +34,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     importe: <xsl-value-of select="/importe"/>
             </xsl:for-each> 
             base-imponible: <xsl-value-of select="factura/base-imponible"/>
+            iva: <xsl-value-of select="factura/iva"/>
             cuota-iva: <xsl-value-of select="factura/cuota-iva"/>
-            total-factura:
+            total-factura: <xsl-value-of select="factura/total-factura"/>
            
     </xsl:template>
 </xsl:stylesheet>
