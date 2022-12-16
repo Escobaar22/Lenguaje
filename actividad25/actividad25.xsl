@@ -26,7 +26,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
             provincia: <xsl:value-of select="/factura/datos-cliente/provincia"/>
         datos-factura:
             objeto:
-            <xsl:for-each select="factura/datos-factura/objetos">
+            <xsl:for-each select="factura/datos-factura/objeto">
                 - ref: <xsl:value-of select="ref"/>
                 - nombre: <xsl:value-of select="nombre"/>
                 - cant: <xsl:value-of select="cant"/>
@@ -34,9 +34,9 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                 - iva: <xsl:value-of select="iva"/>
                 - importe: <xsl:value-of select="importe"/>
             </xsl:for-each> 
-            base-imponible: <xsl:value-of select="/factura/base-imponible"/>
-            iva: <xsl:value-of select="/factura/iva"/>
-            cuota-iva: <xsl:value-of select="/factura/cuota-iva"/>
-            total-factura: <xsl:value-of select="/factura/total-factura"/>       
+            base-imponible: <xsl:value-of select="/factura/datos-factura/base-imponible"/>
+            iva: <xsl:value-of select="/factura/datos-factura/iva"/>
+            cuota-iva: <xsl:value-of select="/factura/datos-factura/cuota-iva"/>
+            total-factura: <xsl:value-of select="/factura/datos-factura/total-factura"/>       
     </xsl:template>
 </xsl:stylesheet>
