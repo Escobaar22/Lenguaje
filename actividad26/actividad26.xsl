@@ -34,7 +34,7 @@
                             <xsl:value-of select="dc:creator"/>
                         </div>
                       </div>
-                </div>
+                </div><p/>
                 </xsl:for-each>
             </body>
         </html>
