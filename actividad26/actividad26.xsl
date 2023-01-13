@@ -22,9 +22,9 @@
                 <div class="card">
                     <div class="card text-center">
                         <div class="card-header">
-                            <img src="{media:content/media:thumbnail/@url}" class="card-img-top" alt="{media:content/media:title}" />
+                            <img src="{media:content/media:thumbnail/@url}" class="card-img-top" alt="{media:content/media:title}" style=" width: 50rem;"/>
                         </div>
-                        <div class="card-body" width="100" height="100">
+                        <div class="card-body">
                           <h5 class="card-title">Special title treatment</h5>
                           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                           <a href="#" class="btn btn-primary">Go somewhere</a>
