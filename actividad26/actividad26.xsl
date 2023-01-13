@@ -25,12 +25,13 @@
                             <img src="{media:content/media:thumbnail/@url}" class="card-img-top" alt="{media:content/media:title}" style=" width: 50rem;"/>
                         </div>
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title"><xsl:value-of select="title"/></h5>
+                          <p class="card-text"><xsl:value-of select="description"/></p>
+                          <a href="{link}" class="btn btn-primary">Leer más</a>
                         </div>
                         <div class="card-footer text-muted">
-                          2 days ago
+                            <xsl:value-of select="pubDate"/><br/>
+                            <xsl:value-of select="dc:creator"/>
                         </div>
                       </div>
                 </div>
