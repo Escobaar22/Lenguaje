@@ -1,1 +1,2 @@
-doc("biblioteca.xml")/bib/libro/titulo
+for $v in doc("biblioteca.xml")/bib/libro
+return data($v/titulo)
