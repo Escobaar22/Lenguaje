@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bailes SYSTEM "Bailes.dtd">
+<?xml-stylesheet type="text/xsl" href="Bailes.xsl"?>
+
+
+<bailes>
+    <baile id = '1'>
+        <nombre>Bachata</nombre>
+        <precio moneda = " euros " periodo = "mensual">36</precio>
+        <plazas>16</plazas>
+        <inicio>15 de enero</inicio>
+        <fin>15 de marzo</fin>
+        <dias>Martes, Jueves y Viernes</dias>
+        <profesor>Bruno</profesor>
+        <sala>Sala 2</sala>
+    </baile>
+    <baile id = '2'>
+        <nombre>Claque</nombre>
+        <precio moneda = " euros " periodo = "mensual">25</precio>
+        <plazas>10</plazas>
+        <inicio>03 de febrero</inicio>
+        <fin>27 de mayo</fin>
+        <dias>Lunes y Miercoles</dias>
+        <profesor>Sofia</profesor>
+        <sala>Sala 3</sala>
+    </baile>
+    <baile id = '3'>
+        <nombre>Tango</nombre>
+        <precio moneda = " euros " periodo = "trimestral">45</precio>
+        <plazas>20</plazas>
+        <inicio>01 de Mayo</inicio>
+        <fin>01 de Octubre</fin>
+        <dias>Lunes, Miercoles y Viernes</dias>
+        <profesor>Fiona</profesor>
+        <sala>Sala 1</sala>
+    </baile>
+    <baile id = '4'>
+        <nombre>Cumbia</nombre>
+        <precio moneda = " euros " periodo = "mensual">15</precio>
+        <plazas>20</plazas>
+        <inicio>16 de Marzo</inicio>
+        <fin>16 de Octubre</fin>
+        <dias>Miercoles</dias>
+        <profesor>Bruno</profesor>
+        <sala>Sala 2</sala>
+    </baile>
+    <baile id = '5'>
+        <nombre>Merengue</nombre>
+        <precio moneda = " euros " periodo = "mensual">35</precio>
+        <plazas>26</plazas>
+        <inicio>02 Junio</inicio>
+        <fin>02 de Noviembre</fin>
+        <dias>Martes y Jueves</dias>
+        <profesor>Sofia</profesor>
+        <sala>Sala 3</sala>
+    </baile>
+    <baile id = '6'>
+        <nombre>Breakdance</nombre>
+        <precio moneda = " euros " periodo ="cada dos meses" >50</precio>
+        <plazas>20</plazas>
+        <inicio>15 de Octubre</inicio>
+        <fin>15 de Marzo</fin>
+        <dias>Lunes, Martes y Jueves</dias>
+        <profesor>Fiona</profesor>
+        <sala>Sala 1</sala>
+    </baile>
+</bailes>
