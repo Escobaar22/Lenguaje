@@ -1,123 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!DOCTYPE servicios SYSTEM "consultasalud.dtd">
 <?xml-stylesheet type="text/xsl" href="consultasalud.xsl"?>
 
+
 <servicios>
-    <servicio nombre = 'fisioterapia'>
+    <servicio nombre = 'Fisioterapia'>
         <cuota>
             <precio>35€/hora</precio>
             <bono>5 sesiones 160€/10 sesiones 300€</bono>
         </cuota>
-        <plazas>reserva previa</plazas>
-        <dias>
-            <dia>Lunes</dia>
-            <dia>Martes</dia>
-            <dia>Miercoles</dia>
-            <dia>Jueves</dia>
-            <dia>Viernes</dia>
-        </dias>
+        <plazas>Reserva previa</plazas>
+        <dias>De lunes a Viernes</dias>
         <horarios>
-            <horario>9:00 - 13:00</horario>
-            <horario>15:00 - 19:00</horario>
+            <horariom>9:00 - 13:00</horariom>
+            <horariot>15:00 - 19:00</horariot>
         </horarios>
-        <empleados>
-            <empleado>Chus</empleado>
-            <empleado>Marga</empleado>
-            <empleado>Silvia</empleado>
-        </empleados>
+        <empleados> Chus, Marga y Silvia </empleados>
     </servicio>
-    <servicio nombre = 'podologia'>
+    <servicio nombre = 'Podologia'>
         <cuota>
             <precio>25€/hora</precio>
             <bono>5 sesiones 100€/10 sesiones 190€</bono>
         </cuota>
-        <plazas>reserva previa</plazas>
-        <dias>
-            <dia>Lunes</dia>
-            <dia>Martes</dia>
-            <dia>Miercoles</dia>
-            <dia>Jueves</dia>
-            <dia>Viernes</dia>
-        </dias>
+        <plazas>Reserva previa</plazas>
+        <dias>De Lunes a Viernes</dias>
         <horarios>
-            <horario>9:00 - 13:00</horario>
-            <horario>15:00 - 19:00</horario>
+            <horariom>9:00 - 13:00</horariom>
+            <horariot>15:00 - 19:00</horariot>
         </horarios>
-        <empleados>
-            <empleado>Joana</empleado>
-        </empleados>
+        <empleados>Joana</empleados>
     </servicio>
-    <servicio nombre = 'psicologia'>
+    <servicio nombre = 'Psicologia'>
         <cuota>
             <precio>50€/hora</precio>
             <bono>5 sesiones 220€/10 sesiones 400€</bono>
         </cuota>
-        <plazas>reserva previa</plazas>
-        <dias >
-            <dia>Lunes</dia>
-            <dia>Martes</dia>
-            <dia>Miercoles</dia>
-            <dia>Jueves</dia>
-            <dia>Viernes</dia>
-        </dias>
+        <plazas>Reserva previa</plazas>
+        <dias > De Lunes a Viernes </dias>
         <horarios>
-            <horario>9:00 - 13:00</horario>
-            <horario>15:00 - 19:00</horario>
+            <horariom>9:00 - 13:00</horariom>
+            <horariot>15:00 - 19:00</horariot>
         </horarios>
-        <empleados>
-            <empleado>Aina</empleado>
-        </empleados>
+        <empleados> Aina </empleados>
     </servicio>
-    <servicio nombre = 'yoga'>
-        <cuota>25€/mes</cuota>
+    <servicio nombre = 'Yoga'>
+        <cuota>
+            <precio>25€/mes</precio>
+            <bono>No hay bonos disponibles</bono>
+        </cuota>
         <plazas>20 personas</plazas>
-        <dias>
-            <dia>Lunes</dia>
-            <dia>Miercoles</dia>
-            <dia>Viernes</dia>
-        </dias>
+        <dias> Lunes, Miercoles, Viernes </dias>
         <horarios>
-            <horario>11:00 - 12:30</horario>
-            <horario>17:00 - 18:30</horario>
+            <horariom>11:00 - 12:30</horariom>
+            <horariot>17:00 - 18:30</horariot>
         </horarios>
-        <empleado>
-            <empelado>Biel</empelado>
-            <empleado>Alex</empleado>
-        </empleado>
+        <empleados> Biel y Alex </empleados>
     </servicio>
-    <servicio nombre = 'pilates'>
-        <cuota>30€/mes</cuota>
+    <servicio nombre = 'Pilates'>
+        <cuota>
+            <precio>30€/mes</precio>
+            <bono>No hay bonos disponibles</bono>
+        </cuota>
         <plazas>25 personas</plazas>
-        <dias>
-            <dia>Martes</dia>
-            <dia>Jueves</dia>
-            <dia>Viernes</dia>
-        </dias>
+        <dias> Martes, Jueves y Viernes </dias>
         <horarios>
-            <horario>10:00 - 11:30</horario>
-            <horario>16:00 - 17:30</horario>
+            <horariom>10:00 - 11:30</horariom>
+            <horariot>16:00 - 17:30</horariot>
         </horarios>
-        <empleados>
-            <empleado>Tolo</empleado>
-        </empleados>
+        <empleados> Tolo </empleados>
     </servicio>
-    <servicio nombre = 'meditación guiada'>
-        <cuota>35€/mes</cuota>
+    <servicio nombre = 'Meditación guiada'>
+        <cuota>
+            <precio>35€/mes</precio>
+            <bono>No hay bonos disponibles</bono>
+        </cuota>
         <plazas>10 personas</plazas>
-        <dias>
-            <dia>Lunes</dia>
-            <dia>Martes</dia>
-            <dia>Miercoles</dia>
-            <dia>Jueves</dia>
-            <dia>Viernes</dia>
-        </dias>
+        <dias> De Lunes a Viernes </dias>
         <horarios>
-            <horario>10:00 - 11:00</horario>
-            <horario>19:00 - 20:00</horario>
+            <horariom>10:00 - 11:00</horariom>
+            <horariot>19:00 - 20:00</horariot>
         </horarios>
-        <empleados>
-            <empleado>Biel</empleado>
-            <empleado>Alex</empleado>
-        </empleados>
+        <empleados> Biel y Alex </empleados>
     </servicio>
 </servicios>
