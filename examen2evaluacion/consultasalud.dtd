@@ -1,0 +1,14 @@
+<!ELEMENT servicios (servicio+)>
+<!ELEMENT servicio (cuota,plazas,dias,horarios,empleados?,empleado?)>
+<!ATTLIST servicio nombre CDATA #REQUIRED>
+<!ELEMENT cuota (#PCDATA|precio|bono)*>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT bono (#PCDATA)>
+<!ELEMENT plazas (#PCDATA)>
+<!ELEMENT dias (dia+)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT horarios (horario+)>
+<!ELEMENT horario (#PCDATA)>
+<!ELEMENT empleados (empleado+)>
+<!ELEMENT empleado (#PCDATA|empelado|empleado)*>
+<!ELEMENT empelado (#PCDATA)>
